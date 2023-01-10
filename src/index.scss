@@ -46,3 +46,20 @@ h6 {
   border-radius: 0.5rem;
   border: none;
 }
+
+@media screen and (max-width: 1202px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 1056px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
