@@ -10,7 +10,7 @@ const phones = [
   { text: '+380 (99) 760 39 29', number: '+380997603929' },
 ];
 
-const navigation = [
+export const navigation = [
   {
     text: 'Головна',
     link: '/',

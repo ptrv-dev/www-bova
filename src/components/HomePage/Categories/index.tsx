@@ -4,7 +4,7 @@ import SectionTitle from '../../UI/SectionTitle';
 
 import './Categories.scss';
 
-const categories = [
+export const categories = [
   { title: 'Розкидачі мінеральних добрив', categoryId: 1, image: '1.png' },
   { title: 'Розкидачі органічних добрив', categoryId: 2, image: '1.png' },
   { title: 'Причепи', categoryId: 3, image: '1.png' },
