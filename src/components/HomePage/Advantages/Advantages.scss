@@ -1,0 +1,24 @@
+.advantages {
+  &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    text-align: center;
+    span {
+      font-size: 120px;
+      color: #1e3a8a;
+      opacity: 0.5;
+      font-family: 'Montserrat';
+      line-height: 1;
+    }
+    h4 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    width: 225px;
+  }
+}
