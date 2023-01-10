@@ -44,6 +44,7 @@ const Popular: React.FC = () => {
                   className="popular__item"
                 />
               );
+            else return <></>;
           })}
         </div>
       </div>
