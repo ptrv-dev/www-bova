@@ -1,0 +1,17 @@
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  span {
+    width: 6rem;
+    height: 1px;
+    background: #1c1917;
+  }
+  h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+}

@@ -47,11 +47,16 @@ h6 {
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   border: none;
+  text-decoration: none;
   &_o {
     background: none;
     border: 1px solid #ea580c;
     color: #ea580c;
   }
+}
+
+.section {
+  padding: 2rem 0;
 }
 
 @media screen and (max-width: 1202px) {
