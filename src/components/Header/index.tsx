@@ -5,7 +5,7 @@ import ContactButton from '../UI/ContactButton';
 
 import './Header.scss';
 
-const phones = [
+export const phones = [
   { text: '+380 (99) 760 39 29', number: '+380997603929' },
   { text: '+380 (99) 760 39 29', number: '+380997603929' },
 ];

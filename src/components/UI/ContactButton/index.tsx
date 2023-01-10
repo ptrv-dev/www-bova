@@ -1,8 +1,18 @@
 import React from 'react';
+import { useAppDispatch } from '../../../store/store';
+import { setIsActive } from '../../../store/slices/popupSlice';
+
+import './ContactButton.scss';
 
 const ContactButton: React.FC = () => {
+  const dispatch = useAppDispatch();
+
+  const handleClick = () => {
+    dispatch(setIsActive(true));
+  };
+
   return (
-    <button className="btn">
+    <button className="btn" onClick={handleClick}>
       <svg
         width="20"
         height="20"

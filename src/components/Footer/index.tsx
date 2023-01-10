@@ -1,14 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { navigation } from '../Header';
+import { navigation, phones } from '../Header';
 import { categories } from '../HomePage/Categories';
 
 import './Footer.scss';
-
-const phones = [
-  { text: '+380 (99) 760 39 29', number: '+380997603929' },
-  { text: '+380 (99) 760 39 29', number: '+380997603929' },
-];
 
 const address = 'м. Запоріжжя, вул. Перемоги 216/4, 17564';
 
