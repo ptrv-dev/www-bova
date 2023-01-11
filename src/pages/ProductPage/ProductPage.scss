@@ -36,6 +36,9 @@
       margin-top: 1rem;
     }
   }
+  &__description {
+    white-space: pre-line;
+  }
 }
 .product-slider {
   width: 50%;

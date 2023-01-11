@@ -9,7 +9,7 @@ export const categories = [
   { title: 'Розкидачі органічних добрив', categoryId: 2, image: '1.png' },
   { title: 'Причепи', categoryId: 3, image: '1.png' },
   { title: 'Напівпричепи', categoryId: 4, image: '1.png' },
-  { title: 'Куни', categoryId: 1, image: '1.png' },
+  { title: 'Фронтальні навантажувачі', categoryId: 5, image: '1.png' },
   { title: 'Сівалки', categoryId: 6, image: '1.png' },
   { title: 'Зернометателі', categoryId: 7, image: '1.png' },
   { title: 'Катки', categoryId: 8, image: '1.png' },
