@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import ContactButton from '../UI/ContactButton';
 
@@ -48,6 +48,13 @@ const Header: React.FC = () => {
 
     return () => window.removeEventListener('resize', resize);
   });
+
+  const location = useLocation();
+
+  React.useEffect(() => {
+    setIsMenuOpen(false);
+    window.scroll(0, 0);
+  }, [location]);
 
   return (
     <div className="header">
