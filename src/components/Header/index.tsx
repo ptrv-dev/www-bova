@@ -21,15 +21,15 @@ export const navigation = [
   },
   {
     text: 'Новини',
-    link: '/',
+    link: '/news',
   },
   {
     text: 'Про нас',
-    link: '/',
+    link: '/about-us',
   },
   {
     text: 'Контакти',
-    link: '/',
+    link: '/contact-us',
   },
 ];
 

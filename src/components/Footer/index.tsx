@@ -5,9 +5,9 @@ import { categories } from '../HomePage/Categories';
 
 import './Footer.scss';
 
-const address = 'м. Запоріжжя, вул. Перемоги 216/4, 17564';
+export const address = 'м. Запоріжжя, вул. Перемоги 216/4, 17564';
 
-const email = 'agrotech@gmail.com';
+export const email = 'agrotech@gmail.com';
 
 const Footer: React.FC = () => {
   return (

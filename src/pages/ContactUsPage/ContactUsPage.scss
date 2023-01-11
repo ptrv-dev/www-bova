@@ -1,0 +1,61 @@
+.about-us-page {
+  padding-top: 154px;
+  padding-bottom: 4rem;
+  &__container {
+    padding: 2rem 1rem;
+  }
+  &__body {
+    background: #eff6ff;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  &__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  &__subtitle {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+  }
+  &__list-item {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #44403c;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__map {
+    margin-top: 2rem;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-us-page {
+    padding-top: 103px;
+  }
+}
