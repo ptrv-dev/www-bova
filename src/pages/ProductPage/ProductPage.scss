@@ -2,15 +2,43 @@
   padding-top: 154px;
   &__container {
     padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   &__top {
     display: flex;
     gap: 30px;
   }
+  &__info {
+    width: 50%;
+  }
+  &__title {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  &__price {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #1d4ed8;
+  }
+  &__subtitle {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    &_mb {
+      margin-bottom: 0.5rem;
+    }
+    &_mt {
+      margin-top: 1rem;
+    }
+  }
 }
 .product-slider {
-  width: 100%;
-  max-width: 50%;
+  width: 50%;
   &__root {
     position: relative;
 
@@ -65,6 +93,36 @@
     transition: opacity 0.2s;
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+.product-page-table {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    background: #1d4ed8;
+    text-align: center;
+    width: 100%;
+  }
+  table {
+    border-collapse: collapse;
+    tr {
+      background: #eff6ff;
+      border-bottom: 1px solid #cce2ff;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    td {
+      padding: 0.5rem 1rem;
+      width: 50%;
+      border: none;
     }
   }
 }

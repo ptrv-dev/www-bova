@@ -6,6 +6,7 @@ import { IProductItem } from '../../@types/custom';
 import './ProductPage.scss';
 
 import json from '../../json/products.json';
+import ContactButton from '../../components/UI/ContactButton';
 
 const ProductPage: React.FC = () => {
   const { category, id } = useParams();
@@ -90,6 +91,39 @@ const ProductPage: React.FC = () => {
                   />
                 ))}
               </div>
+            </div>
+            <div className="product-page__info">
+              <h2 className="product-page__title">{data.title}</h2>
+              <h2 className="product-page__price">
+                {data.price.toLocaleString('ua-UA', {
+                  style: 'currency',
+                  currency: 'UAH',
+                })}
+              </h2>
+              <br />
+              <h4 className="product-page__subtitle product-page__subtitle_mb">
+                Для замовлення натискайте кнопку:
+              </h4>
+              <ContactButton />
+              <h4 className="product-page__subtitle product-page__subtitle_mt">
+                Опис:
+              </h4>
+              <p className="product-page__description">{data.description}</p>
+            </div>
+          </div>
+          <div className="product-page__bottom">
+            <div className="product-page-table">
+              <h3>Технічні характеристики</h3>
+              <table>
+                <tbody>
+                  {data.table.map((item, idx) => (
+                    <tr key={idx}>
+                      <td>{item[0]}</td>
+                      <td>{item[1]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
