@@ -17,7 +17,7 @@ export const navigation = [
   },
   {
     text: 'Каталог',
-    link: '/',
+    link: '/catalog',
   },
   {
     text: 'Новини',

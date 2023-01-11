@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ContactButton from '../../UI/ContactButton';
 
 import './Hero.scss';
@@ -14,7 +15,7 @@ const Hero: React.FC = () => {
           </h1>
           <div className="hero__buttons">
             <ContactButton />
-            <button className="btn btn_o">
+            <Link to={'/catalog'} className="btn btn_o">
               <svg
                 width="20"
                 height="20"
@@ -30,7 +31,7 @@ const Hero: React.FC = () => {
                 />
               </svg>
               До каталогу
-            </button>
+            </Link>
           </div>
         </div>
         <img
