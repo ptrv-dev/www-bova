@@ -7,19 +7,19 @@ import './ContactUsPage.scss';
 
 const ContactUsPage: React.FC = () => {
   return (
-    <div className="about-us-page">
-      <div className="about-us-page__container container">
+    <div className="contact-us-page">
+      <div className="contact-us-page__container container">
         <SectionTitle>Контакти</SectionTitle>
-        <div className="about-us-page__body">
-          <h3 className="about-us-page__title">ТОВ “Agrotech”</h3>
-          <div className="about-us-page__row">
-            <div className="about-us-page__item">
-              <h4 className="about-us-page__subtitle">Номера телефонів</h4>
-              <div className="about-us-page__list">
+        <div className="contact-us-page__body">
+          <h3 className="contact-us-page__title">ТОВ “Agrotech”</h3>
+          <div className="contact-us-page__row">
+            <div className="contact-us-page__item">
+              <h4 className="contact-us-page__subtitle">Номера телефонів</h4>
+              <div className="contact-us-page__list">
                 {phones.map((phone, idx) => (
                   <a
                     key={idx}
-                    className="about-us-page__list-item"
+                    className="contact-us-page__list-item"
                     href={`tel:${phone.number}`}
                   >
                     <svg
@@ -41,9 +41,12 @@ const ContactUsPage: React.FC = () => {
                 ))}
               </div>
             </div>
-            <div className="about-us-page__item">
-              <h4 className="about-us-page__subtitle">Електронна адреса</h4>
-              <a href={`mailto:${email}`} className="about-us-page__list-item">
+            <div className="contact-us-page__item">
+              <h4 className="contact-us-page__subtitle">Електронна адреса</h4>
+              <a
+                href={`mailto:${email}`}
+                className="contact-us-page__list-item"
+              >
                 <svg
                   width="21"
                   height="20"
@@ -64,9 +67,9 @@ const ContactUsPage: React.FC = () => {
                 {email}
               </a>
             </div>
-            <div className="about-us-page__item">
-              <h4 className="about-us-page__subtitle">Фізична адреса</h4>
-              <p className="about-us-page__list-item">
+            <div className="contact-us-page__item">
+              <h4 className="contact-us-page__subtitle">Фізична адреса</h4>
+              <p className="contact-us-page__list-item">
                 <svg
                   width="21"
                   height="20"
@@ -84,11 +87,11 @@ const ContactUsPage: React.FC = () => {
                 {address}
               </p>
             </div>
-            <div className="about-us-page__item">
-              <h4 className="about-us-page__subtitle">Графік роботи</h4>
-              <div className="about-us-page__list">
-                <p className="about-us-page__list-item">Понеділок - Субота</p>
-                <p className="about-us-page__list-item">8:00 - 18:00</p>
+            <div className="contact-us-page__item">
+              <h4 className="contact-us-page__subtitle">Графік роботи</h4>
+              <div className="contact-us-page__list">
+                <p className="contact-us-page__list-item">Понеділок - Субота</p>
+                <p className="contact-us-page__list-item">8:00 - 18:00</p>
               </div>
             </div>
           </div>
@@ -100,7 +103,7 @@ const ContactUsPage: React.FC = () => {
           height="400"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="about-us-page__map"
+          className="contact-us-page__map"
         ></iframe>
       </div>
     </div>
