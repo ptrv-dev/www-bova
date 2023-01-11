@@ -8,6 +8,7 @@ import CatalogPage from './pages/CatalogPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ContactUsPopup from './components/contactUsPopup';
+import ProductsPage from './pages/ProductsPage';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/products/:category" element={<ProductsPage />} />
       </Routes>
       <ContactUsPopup />
       <Footer />

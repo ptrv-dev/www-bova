@@ -4,7 +4,7 @@ import SectionTitle from '../../UI/SectionTitle';
 import './Popular.scss';
 
 import products from '../../../json/products.json';
-import ProductCard from '../../ProductCard';
+import ProductCard from '../../ProductInfoCard';
 
 const popular = [
   {

@@ -4,36 +4,51 @@ import { Link } from 'react-router-dom';
 import './ProductCard.scss';
 
 interface ProductCardProps {
+  className?: string;
   id: number;
-  category: number;
+  categoryId: number;
   image: string;
   title: string;
   description: string;
-  className?: string;
+  price: number;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
+  className,
   id,
-  category,
+  categoryId,
   image,
   title,
   description,
-  className,
+  price,
 }) => {
   return (
-    <div className={`product-card ${className ? className : ''}`}>
-      <img
-        src={`./assets/img/products/${image}`}
-        alt={title}
-        className="product-card__image"
-      />
-      <h5 className="product-card__title">{title}</h5>
+    <div className={`product-card ${className}`}>
+      <Link to={`/products/${categoryId}/${id}`}>
+        <img
+          src={`/assets/img/products/${image}`}
+          alt={title}
+          className="product-card__image"
+        />
+      </Link>
+      <div className="product-card__row">
+        <h3 className="product-card__title">{title}</h3>
+        <h3 className="product-card__price">
+          {price.toLocaleString('ua-UA', {
+            style: 'currency',
+            currency: 'UAH',
+          })}
+        </h3>
+      </div>
       <p className="product-card__description">
         {description.length <= 153
           ? description
           : description.slice(0, 150) + '...'}
       </p>
-      <Link to={`/products/${category}/${id}`} className="btn btn_o">
+      <Link
+        to={`/products/${categoryId}/${id}`}
+        className="product-card__btn btn"
+      >
         Докладніше...
       </Link>
     </div>

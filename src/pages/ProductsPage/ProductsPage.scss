@@ -1,0 +1,31 @@
+.products-page {
+  padding-top: 154px;
+  min-height: 60vh;
+  &__container {
+    padding: 2rem 1rem;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .products-page {
+    padding-top: 103px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .products-page {
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+    &__item {
+      flex: 1;
+    }
+  }
+}
