@@ -57,6 +57,7 @@
   &__row {
     display: flex;
     gap: 1rem;
+    overflow: auto;
   }
   &__img {
     width: 6rem;
@@ -64,6 +65,7 @@
     border-radius: 0.5rem;
     object-fit: cover;
     cursor: pointer;
+    flex-shrink: 0;
     &_active {
       border: 0.25rem solid #1d4ed8;
     }
@@ -130,5 +132,20 @@
 @media screen and (max-width: 550px) {
   .product-page {
     padding-top: 103px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .product-page {
+    &__top {
+      display: flex;
+      flex-direction: column;
+    }
+    &__info {
+      width: 100%;
+    }
+  }
+  .product-slider {
+    width: 100%;
   }
 }
