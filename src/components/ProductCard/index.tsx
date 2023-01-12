@@ -34,6 +34,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           className="product-card__image"
         />
       </Link>
+      <div className="product-card__info">Державна компенсація -25%</div>
       <div className="product-card__row">
         <h3 className="product-card__title">{title}</h3>
         <h3 className="product-card__price">

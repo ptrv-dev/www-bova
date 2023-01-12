@@ -19,7 +19,12 @@ export const categories = [
   { title: 'Напівпричепи', categoryId: 4, image: 'напів причепи.png' },
   { title: 'Фронтальні навантажувачі', categoryId: 5, image: 'куни.png' },
   { title: 'Сівалки', categoryId: 6, image: 'сівалки.png' },
-  { title: 'Зернометателі', categoryId: 7, image: 'зернометателі.png' },
+  {
+    title: 'Зернометателі',
+    categoryId: 7,
+    image: 'зернометателі.png',
+    video: 'зм.mp4',
+  },
   { title: 'Катки', categoryId: 8, image: 'катки.png' },
   { title: 'Борони', categoryId: 9, image: 'борони.png' },
 ];

@@ -12,6 +12,10 @@ import ProductCard from '../../components/ProductCard';
 const ProductsPage: React.FC = () => {
   const { category } = useParams();
 
+  const currentCategory = categories.find(
+    (item) => item.categoryId === Number(category)
+  )!;
+
   const [products, setProducts] = React.useState<IProductItem[] | undefined>(
     []
   );
@@ -23,12 +27,14 @@ const ProductsPage: React.FC = () => {
   return (
     <div className="products-page">
       <div className="products-page__container container">
-        <SectionTitle>
-          {
-            categories.find((item) => item.categoryId === Number(category))!
-              .title
-          }
-        </SectionTitle>
+        <SectionTitle>{currentCategory.title}</SectionTitle>
+        {currentCategory.video && (
+          <video
+            className="products-page__video"
+            src={`/assets/video/${currentCategory.video}`}
+            controls
+          ></video>
+        )}
         {products && (
           <div className="products-page__list">
             {products.map((product, idx) => (

@@ -21,6 +21,7 @@
     height: 260px;
     object-fit: cover;
     border-radius: 1rem;
+    display: block;
   }
   &__row {
     display: flex;
@@ -31,6 +32,16 @@
       font-weight: 400;
       font-size: 1.5rem;
     }
+  }
+  &__info {
+    align-self: flex-start;
+    background: #1d4ed8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    margin-top: 1rem;
   }
   &__price {
     color: #1d4ed8;
