@@ -5,9 +5,9 @@ import { categories } from '../HomePage/Categories';
 
 import './Footer.scss';
 
-export const address = 'м. Запоріжжя, вул. Перемоги 216/4, 17564';
+export const address = 'с. Проців, Київська обл.,  вул. Центральна 6а';
 
-export const email = 'agrotech@gmail.com';
+export const email = 'tov.agrotech@gmail.com';
 
 const Footer: React.FC = () => {
   return (
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
       <div className="footer-bottom">
         <div className="container">
           <div className="footer__copyright">
-            © 2022 “AgroTech” • All Rights Reserved.
+            © 2023 “AgroTech” • All Rights Reserved.
           </div>
         </div>
       </div>

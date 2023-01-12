@@ -98,7 +98,7 @@ const ContactUsPage: React.FC = () => {
         </div>
         <iframe
           title="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10704.106149707071!2d35.185341136707166!3d47.87781344502047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc67bab9a7ecd9%3A0x4a4b5d5e584227b7!2z0KDQmNCdINCb0KLQlA!5e0!3m2!1sru!2sua!4v1673362314737!5m2!1sru!2sua"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.710150157306!2d30.77853193419579!3d50.24131964456086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4eb307f4c5561%3A0x4ca1517a34f549f!2z0LLRg9C70LjRhtGPINCm0LXQvdGC0YDQsNC70YzQvdCwLCA2LCDQn9GA0L7RhtGW0LIsINCa0LjRl9Cy0YHRjNC60LAg0L7QsdC7LiwgMDgzNDQ!5e0!3m2!1sru!2sua!4v1673516367746!5m2!1sru!2sua"
           width="100%"
           height="400"
           loading="lazy"

@@ -6,8 +6,8 @@ import ContactButton from '../UI/ContactButton';
 import './Header.scss';
 
 export const phones = [
-  { text: '+380 (99) 760 39 29', number: '+380997603929' },
-  { text: '+380 (99) 760 39 29', number: '+380997603929' },
+  { text: '+380 (99) 665 64 40', number: '+380996656440' },
+  { text: '+380 (97) 343 06 44', number: '+380973430644' },
 ];
 
 export const navigation = [
