@@ -4,7 +4,7 @@ import SectionTitle from '../../UI/SectionTitle';
 import './Popular.scss';
 
 import products from '../../../json/products.json';
-import ProductCard from '../../ProductInfoCard';
+import ProductInfoCard from '../../ProductInfoCard';
 
 const popular = [
   {
@@ -36,7 +36,7 @@ const Popular: React.FC = () => {
 
             if (data)
               return (
-                <ProductCard
+                <ProductInfoCard
                   key={idx}
                   id={data.id}
                   category={data.categoryId}

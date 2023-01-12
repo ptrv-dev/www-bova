@@ -7,23 +7,23 @@ import './Reviews.scss';
 const reviews = [
   {
     image: '1.jpg',
-    title: 'Леонід Макарон',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis iaculis leo, vel interdum est. Duis congue ex non facilisis euismod. Phasellus feugiat libero ante. Vivamus sit amet ante mi. Sed eget consequat mauris, feugiat vehicula velit.',
+    title: 'Олександр Єрмаков',
+    text: 'Отличный прицеп метал и швы на 👍\nСудя по швейлеру сделано неплохо.',
   },
   {
     image: '1.jpg',
-    title: 'Леонід Макарон',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis iaculis leo, vel interdum est. Duis congue ex non facilisis euismod. Phasellus feugiat libero ante. Vivamus sit amet ante mi. Sed eget consequat mauris, feugiat vehicula velit.',
+    title: 'Олексій Таран',
+    text: 'Здрастуйте. Навантажувач вогонь 🔥🔥🔥🔥🔥🔥. Удачі вам і вашому бізнесу.',
   },
   {
     image: '1.jpg',
-    title: 'Леонід Макарон',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis iaculis leo, vel interdum est. Duis congue ex non facilisis euismod. Phasellus feugiat libero ante. Vivamus sit amet ante mi. Sed eget consequat mauris, feugiat vehicula velit.',
+    title: 'Олексій',
+    text: 'Хлопці молодці! За грамотного підходу техніка працює довго і як треба.',
   },
   {
     image: '1.jpg',
-    title: 'Леонід Макарон',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis iaculis leo, vel interdum est. Duis congue ex non facilisis euismod. Phasellus feugiat libero ante. Vivamus sit amet ante mi. Sed eget consequat mauris, feugiat vehicula velit.',
+    title: 'Миколай',
+    text: 'Відсіяли такою 3 років, тільки УПС-4. Впринципі норм(за свою ціну).',
   },
 ];
 
