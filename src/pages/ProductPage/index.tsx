@@ -109,23 +109,35 @@ const ProductPage: React.FC = () => {
                 Опис:
               </h4>
               <p className="product-page__description">{data.description}</p>
+              {data.description_rus && (
+                <>
+                  <h4 className="product-page__subtitle product-page__subtitle_mt">
+                    Описание:
+                  </h4>
+                  <p className="product-page__description">
+                    {data.description_rus}
+                  </p>
+                </>
+              )}
             </div>
           </div>
-          <div className="product-page__bottom">
-            <div className="product-page-table">
-              <h3>Технічні характеристики</h3>
-              <table>
-                <tbody>
-                  {data.table.map((item, idx) => (
-                    <tr key={idx}>
-                      <td>{item[0]}</td>
-                      <td>{item[1]}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+          {data.table.length > 0 && (
+            <div className="product-page__bottom">
+              <div className="product-page-table">
+                <h3>Технічні характеристики</h3>
+                <table>
+                  <tbody>
+                    {data.table.map((item, idx) => (
+                      <tr key={idx}>
+                        <td>{item[0]}</td>
+                        <td>{item[1]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
     </div>
