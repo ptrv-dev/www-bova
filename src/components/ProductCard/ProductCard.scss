@@ -4,6 +4,18 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  position: relative;
+  &__badge {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    background: #ea580c;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+  }
   &__image {
     width: 100%;
     height: 260px;

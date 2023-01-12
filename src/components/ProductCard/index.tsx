@@ -11,6 +11,7 @@ interface ProductCardProps {
   title: string;
   description: string;
   price: number;
+  badge?: boolean;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -21,9 +22,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
   title,
   description,
   price,
+  badge = false,
 }) => {
   return (
     <div className={`product-card ${className}`}>
+      {badge && <div className="product-card__badge">Розстрочка</div>}
       <Link to={`/products/${categoryId}/${id}`}>
         <img
           src={`/assets/img/products/${image}`}

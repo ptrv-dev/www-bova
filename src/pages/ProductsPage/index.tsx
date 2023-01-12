@@ -37,6 +37,7 @@ const ProductsPage: React.FC = () => {
                 className="products-page__item"
                 {...product}
                 image={product.images[0]}
+                badge={true}
               />
             ))}
           </div>

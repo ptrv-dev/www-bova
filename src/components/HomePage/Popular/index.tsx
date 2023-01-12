@@ -8,15 +8,15 @@ import ProductCard from '../../ProductInfoCard';
 
 const popular = [
   {
-    id: 1,
-    categoryId: 1,
+    id: 2,
+    categoryId: 4,
   },
   {
     id: 1,
-    categoryId: 1,
+    categoryId: 5,
   },
   {
-    id: 1,
+    id: 3,
     categoryId: 1,
   },
 ];
@@ -30,8 +30,10 @@ const Popular: React.FC = () => {
           {popular.map((item, idx) => {
             const data = products.find(
               (product) =>
-                product.id === item.id && product.categoryId === item.id
+                product.id === item.id && product.categoryId === item.categoryId
             );
+            console.log(data);
+
             if (data)
               return (
                 <ProductCard
