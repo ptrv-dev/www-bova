@@ -9,23 +9,35 @@ export const categories = [
     title: 'Розкидачі мінеральних добрив',
     categoryId: 1,
     image: 'мін добрива.png',
+    video: 'мін добрива.mp4',
   },
   {
     title: 'Розкидачі органічних добрив',
     categoryId: 2,
     image: 'орг добрива.png',
+    video: 'орг добрива.mp4',
   },
-  { title: 'Причепи', categoryId: 3, image: 'причепи.png' },
+  {
+    title: 'Причепи',
+    categoryId: 3,
+    image: 'причепи.png',
+    video: 'причепи.mp4',
+  },
   { title: 'Напівпричепи', categoryId: 4, image: 'напів причепи.png' },
   { title: 'Фронтальні навантажувачі', categoryId: 5, image: 'куни.png' },
-  { title: 'Сівалки', categoryId: 6, image: 'сівалки.png' },
+  {
+    title: 'Сівалки',
+    categoryId: 6,
+    image: 'сівалки.png',
+    video: 'сівалки.mp4',
+  },
   {
     title: 'Зернометателі',
     categoryId: 7,
     image: 'зернометателі.png',
     video: 'зм.mp4',
   },
-  { title: 'Катки', categoryId: 8, image: 'катки.png' },
+  { title: 'Катки', categoryId: 8, image: 'катки.png', video: 'катки.mp4' },
   { title: 'Борони', categoryId: 9, image: 'борони.png' },
 ];
 
