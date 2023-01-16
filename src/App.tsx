@@ -12,7 +12,7 @@ import AboutUsPage from './pages/AboutUsPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ContactUsPopup from './components/contactUsPopup';
-import NewsPage from './pages/NewsPage';
+import OurTeamPage from './pages/OurTeamPage';
 
 const App: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const App: React.FC = () => {
         <Route path="/products/:category" element={<ProductsPage />} />
         <Route path="/products/:category/:id" element={<ProductPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
-        <Route path="/news" element={<NewsPage />} />
+        <Route path="/our-team" element={<OurTeamPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
       </Routes>
       <ContactUsPopup />

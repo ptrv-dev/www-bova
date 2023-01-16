@@ -20,8 +20,8 @@ export const navigation = [
     link: '/catalog',
   },
   {
-    text: 'Новини',
-    link: '/news',
+    text: 'Наша команда',
+    link: '/our-team',
   },
   {
     text: 'Про нас',
