@@ -32,7 +32,6 @@ const Popular: React.FC = () => {
               (product) =>
                 product.id === item.id && product.categoryId === item.categoryId
             );
-            console.log(data);
 
             if (data)
               return (

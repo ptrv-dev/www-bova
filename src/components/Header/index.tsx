@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Logo from '../Logo';
 
 import ContactButton from '../UI/ContactButton';
 
@@ -60,13 +61,7 @@ const Header: React.FC = () => {
     <div className="header">
       <div className="header-top">
         <div className="header-top__container container">
-          <Link to={'/'} className="logo">
-            <div className="logo__top">
-              <img src="/assets/img/logo.svg" alt="Logo" />
-              <h3>AgroTech</h3>
-            </div>
-            <h5>продаж с/г техніки в Україні</h5>
-          </Link>
+          <Logo />
           <div className="header-phones">
             {phones.map((phone, idx) => (
               <a
@@ -92,7 +87,7 @@ const Header: React.FC = () => {
               </a>
             ))}
           </div>
-          {width > 550 && <ContactButton />}
+          {width > 600 && <ContactButton />}
           <button
             className={`header__burger ${
               isMenuOpen ? 'header__burger_active' : ''
@@ -115,7 +110,7 @@ const Header: React.FC = () => {
                 {item.text}
               </Link>
             ))}
-            {width <= 550 && <ContactButton />}
+            {width <= 600 && <ContactButton />}
           </nav>
         </div>
       </div>

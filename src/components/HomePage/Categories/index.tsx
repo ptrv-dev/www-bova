@@ -23,7 +23,12 @@ export const categories = [
     image: 'причепи.png',
     video: 'причепи.mp4',
   },
-  { title: 'Напівпричепи', categoryId: 4, image: 'напів причепи.png' },
+  {
+    title: 'Напівпричепи',
+    categoryId: 4,
+    image: 'напів причепи.png',
+    video: 'напівпричепи.mp4',
+  },
   { title: 'Фронтальні навантажувачі', categoryId: 5, image: 'куни.png' },
   {
     title: 'Сівалки',

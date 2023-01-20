@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { navigation, phones } from '../Header';
 import { categories } from '../HomePage/Categories';
+import Logo from '../Logo';
 
 import './Footer.scss';
 
@@ -15,13 +16,7 @@ const Footer: React.FC = () => {
       <div className="footer-top">
         <div className="footer-top__container container">
           <div className="footer-top__row">
-            <Link to={'/'} className="logo">
-              <div className="logo__top">
-                <img src="/assets/img/logo.svg" alt="Logo" />
-                <h3>AgroTech</h3>
-              </div>
-              <h5>продаж с/г техніки в Україні</h5>
-            </Link>
+            <Logo />
           </div>
           <div className="footer-top__row">
             <div className="footer-info">

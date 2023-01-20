@@ -1,25 +1,27 @@
 .review {
   display: flex;
-  border-radius: 1rem;
+  flex-direction: column;
   padding: 1rem;
-  background: #eff6ff;
-  img {
-    width: 80px;
-    height: 80px;
-    border-radius: 1rem;
-  }
-  &__col {
-    margin-left: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #1d4ed8;
+  min-height: 8rem;
+
+  &__header {
     display: flex;
-    flex-direction: column;
-    h4 {
-      font-weight: normal;
-      text-transform: uppercase;
-      font-size: 18px;
-      margin-bottom: 0.5rem;
-    }
+    align-items: center;
+    justify-content: space-between;
   }
-  p {
+  &__title {
+    font-size: 18px;
+  }
+  &__date {
+    font-weight: normal;
+    color: #44403c;
+  }
+  &__rating {
+    margin-top: 0.25rem;
+  }
+  &__text {
     white-space: pre-line;
   }
 }

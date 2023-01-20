@@ -1,13 +1,27 @@
 .popular {
   &__row {
     display: flex;
-    flex-grow: 0;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
   }
   &__item {
-    flex: 1;
-    max-width: 370px;
+    width: 368px;
+  }
+}
+@media screen and (max-width: 1202px) {
+  .popular {
+    flex-direction: column;
+    &__item {
+      width: 360px;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .popular {
+    flex-direction: column;
+    &__item {
+      width: 100%;
+    }
   }
 }
